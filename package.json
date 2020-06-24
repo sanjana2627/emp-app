@@ -1,0 +1,31 @@
+{
+  "name": "employee-app",
+  "version": "1.0.0",
+  "description": "Employee management",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest tests/employee.spec.js",
+    "apidoc": "$(npm bin)/apidoc  -f \".*\\.js$\" -i routes/ -o doc/"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "apidoc": "^0.23.0",
+    "express": "^4.16.4",
+    "jest": "^26.0.1",
+    "lodash": "^4.17.11",
+    "mockingoose": "^2.13.2",
+    "mongoose": "^5.9.18"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "apidoc": {
+    "name": "Employee Payments API Docs",
+    "version": "1.0.0",
+    "description": "Documentation for the API endpoints provided by employee-app backend",
+    "title": "employee-app API Docs",
+    "url": "https://employee-payments.herokuapp.com"
+  }
+}
